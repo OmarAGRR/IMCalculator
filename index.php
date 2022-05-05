@@ -14,12 +14,44 @@
 
       <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
+      <link rel="icon" href="favicon.ico">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <?php
+        header('Content-Type: text/html; charset=UTF-8');
+      ?>
+
+    
+      <style>
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+        </style>
     </head>
-    <body>    
+    <body>
   <div class="col-md-4"></div>
     
     <!-- INICIA LA COLUMNA -->
-    
+
     
       <div class="col-md-4">
         <br>
@@ -65,13 +97,13 @@
             ?> </h4> <h3> <?php
             echo "IMC: " , $result;
             if ($result <= 18.5){
-              ?> <br> <h1 style="color:#FF0000"> <?php echo"Bajo de peso";?></h1><?php
+              ?> <br> <h1 style="color:#FF0000"> <?php echo"Peso inferior al normal";?></h1><?php
             } elseif($result > 18.5 && $result <= 24.9){
-              ?> <br> <h1 style="color:#32FF00"> <?php echo "Peso normal";?></h1><?php
+              ?> <br> <h1 style="color:#32FF00"> <?php echo "Normal";?></h1><?php
             } elseif($result > 24.9 && $result <= 29.9){
-              ?> <br> <h1 style="color:#FF4D00"> <?php echo "Sobrepeso";?></h1><?php
+              ?> <br> <h1 style="color:#FF4D00"> <?php echo "Peso superior al normal";?></h1><?php
             } elseif($result > 29.9){
-              ?> <br> <h1 style="color:#FF0000"> <?php echo "Obeso";?> </h1><?php
+              ?> <br> <h1 style="color:#FF0000"> <?php echo "Obesidad";?> </h1><?php
               ?> <p>Le recomendamos los siguientes videos para poder disminuir su IMC</p> 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bVZsdMrOI30?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <?php
             }
@@ -84,9 +116,30 @@
       ?>
       <center>
       <br>
-      <h1>Escala indice de masa corporal</h1>
-      <img src="img/escala.jpg" width="400" height="250">
-      
+      <br>
+      <table id="customers">
+        <tr>
+          <th>Composición corporal</th>
+          <th>Índice de masa corporal (IMC)</th>
+        </tr>
+        <tr>
+          <td>Peso inferior al normal</td>
+          <td>Menos de 18.5</td>
+        </tr>
+        <tr>
+          <td>Normal</td>
+          <td>18.5 – 24.9</td>
+        </tr>
+        <tr>
+          <td>Peso superior al normal</td>
+          <td>25.0 – 29.9</td>
+        </tr>
+        <tr>
+          <td>Obesidad</td>
+          <td>Más de 30.0</td>
+        </tr>
+      </table>
+      <br>      
       </center>
       </div>
       
