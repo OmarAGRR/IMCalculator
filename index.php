@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-      
+    <script src="bootstrap&dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
@@ -61,8 +62,6 @@
         }
       }
     </style>
-
-    <script src="bootstrap&dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
   <body>
     <div style="text-align: center;">
@@ -98,20 +97,20 @@
               Masa (KG): $masa
             </p>
             <p style="font-size: 1.8em;">IMC: $imc</p>
-            EOF;
+EOF;
 
             if ($imc <= 18.5)
             {
               echo "<p style=\"font-size: 2.5em; color: #FF0000;\">Peso inferior al normal</p>";
-            } 
+            }
             else if ($imc > 18.5 && $imc <= 24.9)
             {
               echo "<p style=\"font-size: 2.5em; color: #32FF00;\">Normal</p>";
-            } 
+            }
             else if ($imc > 24.9 && $imc <= 29.9)
             {
               echo "<p style=\"font-size: 2.5em; color: #FF4D00;\">Peso superior al normal</p>";
-            } 
+            }
             else if ($imc > 29.9)
             {
               echo <<<EOF
@@ -120,7 +119,7 @@
                 <p>Le recomendamos los siguientes videos para poder disminuir su IMC</p> 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bVZsdMrOI30" allow="autoplay; picture-in-picture" allowfullscreen />
               </div>
-              EOF;
+EOF;
             }
           }  
         ?>
@@ -148,10 +147,8 @@
             <td>Obesidad</td>
             <td>Más de 30.0</td>
           </tr>
-        </table>    
+        </table>
       </div>
     </div>
   </body>
 </html>
-        
-        
