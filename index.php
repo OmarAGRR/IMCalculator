@@ -80,7 +80,7 @@
             <input type="number" name="masa" step="1" class="form-control" id="nombre" required>
           </div>
 
-          <input type="submit" value="Calcular" class="btn btn-info" name="btn_calcular">
+          <input type="submit" value="Calcular" class="btn btn-info" style="font-size: 1.3em;" name="btn_calcular">
         </form>
 
         <?php
@@ -92,14 +92,14 @@
             $imc = $masa / pow($alt, 2);
 
             echo <<<EOF
-            <p style="font-size: 1.2em;">
+            <p style="font-size: 1.4em;">
               Altura (M): $alt
               <br>
               Masa (KG): $masa
             </p>
             <p style="font-size: 1.8em;">IMC: $imc</p>
             EOF;
-            
+
             if ($imc <= 18.5)
             {
               echo "<p style=\"font-size: 2.5em; color: #FF0000;\">Peso inferior al normal</p>";
@@ -115,7 +115,7 @@
             else if ($imc > 29.9)
             {
               echo <<<EOF
-              <p style="font-size: 2.5em; color:#FF0000">Obesidad</p>
+              <p style="font-size: 2.5em; color: #FF0000">Obesidad</p>
               <div>
                 <p>Le recomendamos los siguientes videos para poder disminuir su IMC</p> 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bVZsdMrOI30" allow="autoplay; picture-in-picture" allowfullscreen />
