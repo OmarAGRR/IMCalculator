@@ -101,15 +101,33 @@ EOF;
 
             if ($imc <= 18.5)
             {
-              echo "<p style=\"font-size: 2.5em; color: #FF0000;\">Peso inferior al normal</p>";
+              echo <<<EOF
+              <p style="font-size: 2.5em; color: #FF0000;">Peso inferior al normal</p>
+              <div>
+                <p>Le recomendamos los siguientes videos para poder aumentar su IMC</p> 
+                <iframe width="450" height="205" src="https://www.youtube.com/embed/C0dO40m_HQw" allow="autoplay; picture-in-picture" allowfullscreen />
+              </div>
+EOF;
             }
             else if ($imc > 18.5 && $imc <= 24.9)
             {
-              echo "<p style=\"font-size: 2.5em; color: #32FF00;\">Normal</p>";
+              echo <<<EOF
+              <p style="font-size: 2.5em; color: #32FF00;">Normal</p>
+              <div>
+                <p>Le recomendamos los siguientes videos para poder mantener estable su IMC</p> 
+                <iframe width="450" height="205" src="https://www.youtube.com/embed/x5BuK8JqODU" allow="autoplay; picture-in-picture" allowfullscreen />
+              </div>
+EOF;
             }
             else if ($imc > 24.9 && $imc <= 29.9)
             {
-              echo "<p style=\"font-size: 2.5em; color: #FF4D00;\">Peso superior al normal</p>";
+              echo <<<EOF
+              <p style="font-size: 2.5em; color: #FF4D00;">Peso superior al normal</p>
+              <div>
+                <p>Le recomendamos los siguientes videos para poder disminuir su IMC</p> 
+                <iframe width="450" height="205" src="https://www.youtube.com/embed/QQkpHI9qv0A" allow="autoplay; picture-in-picture" allowfullscreen />
+              </div>
+EOF;
             }
             else if ($imc > 29.9)
             {
@@ -117,7 +135,7 @@ EOF;
               <p style="font-size: 2.5em; color: #FF0000">Obesidad</p>
               <div>
                 <p>Le recomendamos los siguientes videos para poder disminuir su IMC</p> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bVZsdMrOI30" allow="autoplay; picture-in-picture" allowfullscreen />
+                <iframe width="450" height="205" src="https://www.youtube.com/embed/bVZsdMrOI30" allow="autoplay; picture-in-picture" allowfullscreen />
               </div>
 EOF;
             }
