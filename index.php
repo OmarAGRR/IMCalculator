@@ -18,26 +18,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <style>
-      #customers {
-        font-family: Arial, Helvetica, sans-serif;
+      #IMC {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         border-collapse: collapse;
         width: 100%;
       }
 
-      #customers td, #customers th {
+      #IMC td, #IMC th {
         border: 1px solid #ddd;
         padding: 8px;
       }
 
-      #customers tr:nth-child(even) { 
+      #IMC tr:nth-child(even) { 
         background-color: #f2f2f2;
       }
 
-      #customers tr:hover { 
+      #IMC tr:hover { 
         background-color: #ddd;
       }
 
-      #customers th {
+      #IMC th {
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: left;
@@ -46,7 +46,7 @@
       }
 
       .form-group {
-        text-align: left;
+        text-align: center;
       }
 
       .main-div {
@@ -58,13 +58,13 @@
       @media (min-width: 992px) {
         .main-div {
           padding: 0;
-          width: 33.33333333%;
+          width: 35.555555%;
         }
       }
     </style>
   </head>
   <body>
-    <div style="text-align: center;">
+    <div style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
       <h1>Calculadora IMC</h1>
 
       <div class="main-div">
@@ -126,7 +126,7 @@ EOF;
         
         <hr>
 
-        <table id="customers" style="text-align: left;">
+        <table id="IMC" style="text-align: left;">
           <tr>
             <th>Composición corporal</th>
             <th>Índice de masa corporal (IMC)</th>
