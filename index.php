@@ -126,7 +126,7 @@ EOF;
         
         <hr>
 
-        <table id="customers">
+        <table id="customers" style="text-align: left;">
           <tr>
             <th>Composición corporal</th>
             <th>Índice de masa corporal (IMC)</th>
